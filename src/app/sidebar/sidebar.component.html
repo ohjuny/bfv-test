@@ -1,0 +1,29 @@
+<nav class="navbar">
+  <a routerLink="">
+    <img src="../../assets/bfv-logo.png" alt="bfv-logo">
+  </a>
+  <i class="fa fa-chevron-down toggle" (click)="toggle()"></i>
+  <ul class="menu" [class.visible]="showNav">
+    <li class="item"><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+    <li class="item"><a routerLink="business-spotlight" routerLinkActive="active">Business Spotlight</a></li>
+    <li class="item"><a routerLink="blog" routerLinkActive="active">Blog</a></li>
+    <li class="item"><a routerLink="how-to-help" routerLinkActive="active">How to Help</a></li>
+    <li class="item"><a routerLink="about-us" routerLinkActive="active">About Us</a></li>
+    <li class="item"><a routerLink="contact-us" routerLinkActive="active">Contact Us</a></li>
+  </ul>
+</nav>
+
+<!-- For toggling navbar in mobile view -->
+<!-- <script>
+
+let navMenu = document.getElementById('nav-menu');
+let navToggle = document.getElementById('nav-toggle');
+
+console.log('hello world');
+
+navToggle.addEventListener('click', function () {
+  navMenu.classList.toggle('visible');
+  console.log('was clicked');
+});
+
+</script> -->

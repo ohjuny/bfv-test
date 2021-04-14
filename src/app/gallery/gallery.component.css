@@ -1,0 +1,65 @@
+/* --------------------- */
+/*       <700: mobile    */
+/*    700~960: tablet    */
+/*       >960: PC        */
+/* --------------------- */
+
+
+/* --------------------- */
+/* --------------------- */
+/* Mobile (phone) layout */
+/* --------------------- */
+/* --------------------- */
+
+@media all and (min-width: 0px) and (max-width: 700px) {
+  #gallery {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .post {
+    /* background-color: #fe9049; */
+    flex: none;
+    height: 100vw;
+    width: 100vw;
+    /* border-bottom: 1px solid #000000; */
+    text-align: center;
+  }
+
+  .post img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+
+
+
+
+/* ------------------ */
+/* ------------------ */
+/* PC & Tablet layout */
+/* ------------------ */
+/* ------------------ */
+
+@media all and (min-width: 700px) {
+  #gallery {
+    display: flex;
+    overflow-x: auto;
+    width: 70vw;
+  }
+
+  .post {
+    /* background-color: #fe9049; */
+    flex: none;
+    height: 210px;
+    width: 210px;
+    border: 1px solid #000000;
+    text-align: center;
+  }
+
+  .post img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

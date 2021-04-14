@@ -1,0 +1,117 @@
+/* --------------------- */
+/*       <700: mobile    */
+/*    700~960: tablet    */
+/*       >960: PC        */
+/* --------------------- */
+
+
+/* --------------------- */
+/* --------------------- */
+/* Mobile (phone) layout */
+/* --------------------- */
+/* --------------------- */
+
+@media all and (min-width: 0px) and (max-width: 700px) {
+  #subcontainer {
+    /* background-color:#b90808; */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "content";
+  }
+
+  #content {
+    /* background-color:#5374b1; */
+    grid-area: content;
+    padding: 20px;
+  }
+
+  #menubar {
+    display: none;
+  }
+}
+
+
+
+
+
+/* ------------------ */
+/* ------------------ */
+/* --Tablet layout--- */
+/* ------------------ */
+/* ------------------ */
+
+@media all and (min-width: 700px) and (max-width: 960px) {
+  #subcontainer {
+    /* background-color:#b90808; */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "content";
+  }
+
+  #content {
+    /* background-color:#5374b1; */
+    grid-area: content;
+    padding: 20px;
+  }
+
+  #menubar {
+    display: none;
+  }
+}
+
+
+/* ------------------ */
+/* ------------------ */
+/* ----PC layout----- */
+/* ------------------ */
+/* ------------------ */
+
+@media all and (min-width: 960px) {
+  #subcontainer {
+    /* background-color:#b90808; */
+    display: grid;
+    grid-template-columns: 70% 30% auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "content menubar";
+    height: 100%;
+  }
+
+  #content {
+    /* background-color:#5374b1; */
+    grid-area: content;
+    padding: 20px;
+  }
+
+  #menubar {
+    /* background-color:#742399; */
+    grid-area: menubar;
+  }
+
+  .menu {
+    /* what exactly is -webkit? it works without it I think... */
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 230px;
+
+    background-color:#ffa265c5;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    overflow: scroll;
+  }
+
+  .menu li {
+    list-style-type: none;
+    padding-bottom: 20px;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: #333333;
+  }
+}

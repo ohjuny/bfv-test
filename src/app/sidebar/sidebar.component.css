@@ -1,0 +1,144 @@
+/* --------------------- */
+/*       <700: mobile    */
+/*    700~960: tablet    */
+/*       >960: PC        */
+/* --------------------- */
+
+
+/* --------------------- */
+/* --------------------- */
+/* Mobile (phone) layout */
+/* --------------------- */
+/* --------------------- */
+@media all and (min-width:0px) and (max-width: 700px) {
+  .navbar {
+    background-color: #ddffed;
+    height: 10vh;
+    font-size: 20px;
+  }
+
+  .toggle {
+    position: absolute;
+    top: 2.5vh;
+    right: 10px;
+    color: #0b4aa9;
+    font-size: 5vh;
+  }
+
+  .navbar img {
+    /* border: 1px dotted #000000; */
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+  }
+
+  .menu {
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    background-color: #ddffed;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* flex-wrap: wrap; */
+    display: none;
+  }
+
+  .menu.visible {
+    display: block;
+  }
+
+  .menu li {
+    /* display: block; */
+    border-bottom: 1px dotted #777777;
+  }
+
+  .item {
+    /* border: 1px dotted #da0505; */
+    list-style-type: none;
+    /* padding-top: 5px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .item a {
+    text-decoration: none;
+    color: #0b4aa9;
+  }
+
+  .item a:hover {
+    color: #fe9049;
+  }
+
+  .item a:visited {
+    text-decoration: none;
+  }
+
+  .active {
+    font-weight: bold;
+    /* pretty sure this is bad practice!
+    find a way to overcome specificity "legally" */
+    color: #fe9049 !important;
+  }
+}
+
+
+
+
+/* ------------------ */
+/* ------------------ */
+/* PC & Tablet layout */
+/* ------------------ */
+/* ------------------ */
+
+@media all and (min-width: 700px) {
+  .navbar {
+    background-color: #ddffed;
+    /* display: flex; */
+    text-align: right;
+    padding-top: 50px;
+    font-size: 20px;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .navbar img {
+    /* border: 1px dotted #000000; */
+    max-width: 40%;
+    max-height: 40%;
+  }
+
+  .menu {
+    /* border: 1px solid #000000; */
+    margin-top: 20px;
+  }
+
+  .item {
+    /* border: 1px dotted #da0505; */
+    list-style-type: none;
+    /* padding-top: 5px; */
+    padding-bottom: 16px;
+  }
+
+  .item a {
+    text-decoration: none;
+    color: #0b4aa9;
+  }
+
+  .item a:hover {
+    color: #fe9049;
+  }
+
+  .item a:visited {
+    text-decoration: none;
+  }
+
+  .active {
+    font-weight: bold;
+    /* pretty sure this is bad practice!
+    find a way to overcome specificity "legally" */
+    color: #fe9049 !important;
+  }
+}

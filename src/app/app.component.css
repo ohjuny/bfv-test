@@ -1,0 +1,88 @@
+/* --------------------- */
+/*       <700: mobile    */
+/*    700~960: tablet    */
+/*       >960: PC        */
+/* --------------------- */
+
+
+/* --------------------- */
+/* --------------------- */
+/* Mobile (phone) layout */
+/* --------------------- */
+/* --------------------- */
+@media all and (min-width:0px)and (max-width: 700px) {
+  #container {
+    /* background-color:#b15353; */
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh 100vw auto;
+    grid-template-areas: 
+      "sidebar"
+      "topbar"
+      "main";
+    /* border: 5px solid #000000; */
+  }
+
+  #sidebar {
+    /* background-color:#ddffed; */
+    /* width: 30%; */
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    /* height: 10vh; */
+    border-bottom: 2px solid #000000;
+    /* padding-right: 15px; */
+  }
+
+  #topbar {
+    /* background-color:#5374b1; */
+    grid-area: topbar;
+    border-bottom: 1px solid #777777;
+  }
+
+  #main {
+    /* background-color:#afb153; */
+    grid-area: main;
+  }
+}
+
+
+/* ------------------ */
+/* ------------------ */
+/* PC & Tablet layout */
+/* ------------------ */
+/* ------------------ */
+
+@media all and (min-width: 700px) {
+  #container {
+    /* background-color:#b15353; */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 210px auto;
+    grid-template-areas: 
+      "topbar topbar"
+      "main main";
+    margin-left: 30%;
+  }
+
+  #sidebar {
+    /* background-color:#ddffed; */
+    width: 30%;
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    border-right: 2px solid #000000;
+    padding-right: 15px;
+  }
+
+  #topbar {
+    /* background-color:#5374b1; */
+    grid-area: topbar;
+    border-bottom: 1px solid #777777;
+  }
+
+  #main {
+    /* background-color:#afb153; */
+    grid-area: main;
+  }
+}

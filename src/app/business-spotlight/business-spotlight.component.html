@@ -1,0 +1,38 @@
+<h1>Business Spotlight</h1>
+<p>
+  insert introduction to this page
+</p>
+
+<div id="tiles">
+  <div *ngFor="let business of businesses" class="tile">
+    <a routerLink="/business-spotlight/{{ business.id }}">
+      <img src="{{ business.img_url }}" alt="{{ business.name }}">
+    </a>
+  </div>
+</div>
+
+<!-- <div id="tiles">
+  <div class="tile">
+    <a routerLink="#">
+      <img src="../../assets/test_logo_1.jpeg" alt="company A">
+    </a>
+  </div>
+
+  <div class="tile">
+    <a routerLink="#">
+      <img src="../../assets/test_logo_2.jpeg" alt="company A">
+    </a>
+  </div>
+
+  <div class="tile">
+    <a routerLink="#">
+      <img src="../../assets/test_logo_1.jpeg" alt="company A">
+    </a>
+  </div>
+
+  <div class="tile">
+    <a routerLink="#">
+      <img src="../../assets/test_logo_2.jpeg" alt="company A">
+    </a>
+  </div>
+</div> -->

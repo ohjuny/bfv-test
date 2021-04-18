@@ -4,6 +4,9 @@
 /*       >960: PC        */
 /* --------------------- */
 
+#just-margin {
+  margin: 20px;
+}
 
 /* --------------------- */
 /* --------------------- */
@@ -24,7 +27,7 @@
   #content {
     /* background-color:#5374b1; */
     grid-area: content;
-    padding: 20px;
+    /* padding: 20px; */
   }
 
   #menubar {
@@ -55,7 +58,7 @@
   #content {
     /* background-color:#5374b1; */
     grid-area: content;
-    padding: 20px;
+    /* padding: 20px; */
   }
 
   #menubar {
@@ -84,7 +87,7 @@
   #content {
     /* background-color:#5374b1; */
     grid-area: content;
-    padding: 20px;
+    /* padding: 20px; */
   }
 
   #menubar {
